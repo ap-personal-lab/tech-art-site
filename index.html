@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alex Preston – Deconstructed Tech Art & Commissions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Deconstructed tech artwork and private commissions by Alex Preston – precision layouts of disassembled devices."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-mark">A</span>
+      <span class="logo-text">Alex Preston</span>
+    </div>
+    <nav class="nav">
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#commissions">Commissions</a>
+      <a href="#contact" class="btn-nav">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="hero-kicker">DECONSTRUCTED TECH ART</p>
+          <h1>Exposed circuitry.<br />Precision composition.</h1>
+          <p>
+            I take cameras, Walkmans, disk drives and other devices apart,
+            then rebuild them as precise, blueprint-inspired artworks that
+            celebrate engineering and design.
+          </p>
+          <div class="hero-actions">
+            <a href="#gallery" class="btn primary">View gallery</a>
+            <a href="#commissions" class="btn ghost">Commission a device</a>
+          </div>
+        </div>
+        <div class="hero-highlight">
+          <div class="hero-card">
+            <p class="hero-label">SPEC SHEET</p>
+            <h2>Deconstructed devices</h2>
+            <ul>
+              <li>Analogue & digital audio players</li>
+              <li>Film & digital cameras</li>
+              <li>Disk drives & storage media</li>
+              <li>Custom one-off tech pieces</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="section-header">
+        <h2>Gallery</h2>
+        <p>Selected deconstructed tech compositions by Alex Preston.</p>
+      </div>
+
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="audio">Audio</button>
+        <button class="filter-btn" data-filter="camera">Cameras</button>
+        <button class="filter-btn" data-filter="storage">Storage</button>
+        <button class="filter-btn" data-filter="other">Other</button>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Replace src + metadata with your real work -->
+        <!-- <figure class="gallery-item" data-category="audio">
+          <img src="images/artwork-1.jpg" alt="Deconstructed portable cassette player artwork" />
+          <figcaption>
+            <span class="caption-line"><strong>Device:</strong> Portable Cassette Player</span>
+            <span class="caption-line"><strong>Model:</strong> WM-EX Series</span>
+            <span class="caption-line"><strong>Components:</strong> 64</span>
+            <span class="caption-line"><strong>Year:</strong> 1990s</span>
+          </figcaption>
+        </figure> -->
+
+        <figure class="gallery-item" data-category="camera">
+          <img src="images/nikon.png" alt="Deconstructed 35mm film camera artwork" />
+          <figcaption>
+            <span class="caption-line"><strong>Device:</strong> 35mm Film Camera</span>
+            <span class="caption-line"><strong>Model:</strong> Nikon LF35AF2 Camera</span>
+            <span class="caption-line"><strong>Components:</strong> 380</span>
+            <span class="caption-line"><strong>Year:</strong> 1985</span>
+          </figcaption>
+        </figure>
+
+        <!-- <figure class="gallery-item" data-category="storage">
+          <img src="images/artwork-3.jpg" alt="Deconstructed hard disk drive artwork" />
+          <figcaption>
+            <span class="caption-line"><strong>Device:</strong> Hard Disk Drive</span>
+            <span class="caption-line"><strong>Model:</strong> 3.5″ Magnetic Disk</span>
+            <span class="caption-line"><strong>Components:</strong> 37</span>
+            <span class="caption-line"><strong>Year:</strong> 2000s</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="audio">
+          <img src="images/artwork-4.jpg" alt="Deconstructed CD player artwork" />
+          <figcaption>
+            <span class="caption-line"><strong>Device:</strong> Portable CD Player</span>
+            <span class="caption-line"><strong>Model:</strong> Optical Drive Assembly</span>
+            <span class="caption-line"><strong>Components:</strong> 52</span>
+            <span class="caption-line"><strong>Year:</strong> 1990s</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="camera">
+          <img src="images/artwork-5.jpg" alt="Deconstructed compact digital camera artwork" />
+          <figcaption>
+            <span class="caption-line"><strong>Device:</strong> Compact Digital Camera</span>
+            <span class="caption-line"><strong>Model:</strong> Sensor & Lens Assembly</span>
+            <span class="caption-line"><strong>Components:</strong> 73</span>
+            <span class="caption-line"><strong>Year:</strong> 2010s</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="other">
+          <img src="images/artwork-6.jpg" alt="Deconstructed game controller artwork" />
+          <figcaption>
+            <span class="caption-line"><strong>Device:</strong> Game Controller</span>
+            <span class="caption-line"><strong>Model:</strong> Dual-Stick Layout</span>
+            <span class="caption-line"><strong>Components:</strong> 41</span>
+            <span class="caption-line"><strong>Year:</strong> 2000s</span>
+          </figcaption>
+        </figure> -->
+      </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-content">
+        <button class="lightbox-close" aria-label="Close image">&times;</button>
+        <img src="" alt="Artwork preview" id="lightbox-img" />
+        <p id="lightbox-caption"></p>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section-alt">
+      <div class="section-inner two-column">
+        <div>
+          <h2>About the artist</h2>
+          <p>
+            I’m <strong>Alex Preston</strong>, an artist based in Hertfordshire, UK,
+            focused on the internal geometry of everyday technology.
+            I disassemble devices like Walkmans, cameras, disk drives and CD
+            players, then arrange every component into precise, blueprint-inspired
+            compositions.
+          </p>
+          <p>
+            Each piece starts at the workbench: careful teardown, cleaning and
+            cataloguing every screw, spring and circuit. From there, I map out
+            a layout that balances engineering accuracy with graphic clarity,
+            turning hidden mechanisms into wall-ready artwork.
+          </p>
+        </div>
+        <div class="about-highlight">
+          <div class="stat">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">Devices deconstructed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">1&nbsp;mm</span>
+            <span class="stat-label">Typical spacing tolerance</span>
+          </div>
+          <p class="about-note">
+            I create work for collectors, engineers, designers and anyone with a
+            soft spot for the inside of a device.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMISSIONS -->
+    <section id="commissions" class="section">
+      <div class="section-header">
+        <h2>Private commissions</h2>
+        <p>Custom deconstructed tech art built around your device or idea.</p>
+      </div>
+
+      <div class="commissions-grid">
+        <div class="commission-step">
+          <span class="step-number">STEP 01</span>
+          <h3>Send the brief</h3>
+          <p>
+            Tell me which device you’d like to feature (or what type of device
+            you are interested in), how you want to display it, and any attachment you
+            have to it – story, brand, model, era.
+          </p>
+        </div>
+        <div class="commission-step">
+          <span class="step-number">STEP 02</span>
+          <h3>Spec & quote</h3>
+          <p>
+            I’ll confirm what’s possible with your device, propose a layout size
+            and style, and send a clear quote and timeframe. A deposit secures
+            your slot.
+          </p>
+        </div>
+        <div class="commission-step">
+          <span class="step-number">STEP 03</span>
+          <h3>Disassembly & layout</h3>
+          <p>
+            The device is fully disassembled, cleaned and organised. Components
+            are arranged with blueprint-like precision on a backing board or
+            prepared for high-resolution print.
+          </p>
+        </div>
+        <div class="commission-step">
+          <span class="step-number">STEP 04</span>
+          <h3>Final artwork</h3>
+          <p>
+            You’ll receive the finished piece (framed physical work or print-ready
+            digital files) along with a simple annotation key describing the device.
+          </p>
+        </div>
+      </div>
+
+      <div class="commission-packages">
+        <article class="package">
+          <h3>Personal device</h3>
+          <p class="package-price">from £300</p>
+          <ul>
+            <li>One supplied device (e.g. camera, Walkman, console)</li>
+            <li>Detailed disassembly & layout on backing board</li>
+            <li>Engineering-style labelling and annotations</li>
+          </ul>
+        </article>
+
+        <article class="package">
+          <h3>Nostalgia tech series</h3>
+          <p class="package-price">from £1,400</p>
+          <ul>
+            <li>Curated set of classic devices (tape, CD, early digital)</li>
+            <li>Coordinated series for a single wall or space</li>
+            <li>Ideal for home offices, studios and collections</li>
+          </ul>
+        </article>
+
+        <article class="package">
+          <h3>Corporate / studio commission</h3>
+          <p class="package-price">Quote on request</p>
+          <ul>
+            <li>Deconstructed tech art for offices & reception spaces</li>
+            <li>Device selection and sourcing can be included</li>
+            <li>Brand-aligned layouts and annotation style</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="commission-note">
+        Pricing depends on device type, condition, size and whether I’m sourcing
+        hardware or working from a piece you already own.  
+        For an accurate quote, include as many details as you can in your message.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="section-inner contact-layout">
+        <div>
+          <h2>Commission enquiries & contact</h2>
+          <p>
+            Interested in turning a favourite device into a one-of-a-kind artwork,
+            or planning a series for your space? Use the form to send an enquiry,
+            or email me directly at
+            <a href="mailto:alex@preston.cc">alex@preston.cc</a>
+          </p>
+          <ul class="contact-extra">
+            <li><strong>Location:</strong> Hertfordshire, UK</li>
+            <li><strong>Current availability:</strong> Good</li>
+            <li><strong>Typical turnaround:</strong> 3–6 weeks per piece</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Commission details
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Device, model (if known), how you’d like it displayed, and any deadline."
+              required
+            ></textarea>
+          </label>
+
+          <label>
+            Budget (optional)
+            <input type="text" name="budget" placeholder="e.g. £200–£4,000" />
+          </label>
+
+          <button type="submit" class="btn primary">Send enquiry</button>
+          <p class="form-note">
+            I'll aim to reply within 24 hours.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Alex Preston. All rights reserved.</p>
+    <p class="footer-links">
+      <!-- <a href="#" target="_blank" rel="noreferrer">Instagram</a>
+      <span>·</span>
+      <a href="#" target="_blank" rel="noreferrer">ArtStation</a>
+      <span>·</span> -->
+      <a href="#contact">Contact</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
